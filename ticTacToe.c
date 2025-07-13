@@ -1,3 +1,4 @@
+// This is the tic tac toe game that I made!! It took me about 2 weeks!
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

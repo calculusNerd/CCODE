@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 char messedUpName[100];
 char properName[100];
@@ -84,13 +85,8 @@ const char* manageCase() {
         strcpy(properName, messedUpName);
         return properName;
 
+    } else {
+        printf("\nToo many spaces! This code only supports first name, middle name and the last name. ");
+        exit(0);
     }
 }
-
-/*
-messedUpName[0] = toupper(messedUpName[0]);
-    messedUpName[findSpace + 1] = toupper(messedUpName[findSpace + 1]);
-
-    strcpy(properName, messedUpName);
-    return properName;
-*/
